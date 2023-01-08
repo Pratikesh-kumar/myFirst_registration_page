@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myFirstrespage</title>
+</head>
+<style>
+  form{
+    background-color: rgb(86, 151, 168);
+    text-align:center;
+    
+  }
+  input{
+    font-size: 20px;
+  width: 300px;
+  
+  }
+  label{
+    font-size: larger;
+  }
+  button{
+    color: blue;
+  }
+  
+
+</style>
+<body>
+  <h1><b><center>Book  a call</center></b></h1>
+  
+    <form action="#" onsubmit="onsignup(event)">
+    <label><b>Name:</b><br></label>
+    <input type="text" name="username" placeholder="write your name" required/>
+    <br><br>
+    <label><b>e-mail:</b><br></label>
+    <input type="email" name="email" placeholder="enter your e-mail id" required/>
+    <br><br>
+    <label><b>Phone.no</b><br></label>
+    <input type="text" name="phone.no" placeholder="enter your phone no." required/>
+    <br> <br> <br> 
+    <label><b>Time for call</b><br></label>
+    <input type="date" name="date"/>
+  <br><br>
+     <button type="submit">Get a call</button>
+  </form>
+  <script>
+    function onsignup(event){
+      event.preventDefault();
+      console.log(event.target.username.value);
+      console.log(event.target.email.value);
+    }
+
+  </script>
+</body>
+</html>
